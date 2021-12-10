@@ -8,6 +8,7 @@ import GlobalStyle from "./GlobalStyle";
 import InlineStyle from "./InlineStyle";
 import InPageStyle from "./InPageStyle";
 import StyledComponents from "./StyledComponents";
+import Sass from "./Sass";
 
 const App = () => {
   return (
@@ -33,6 +34,9 @@ const App = () => {
             <li>
               <Link to="/emotion">Emotion</Link>
             </li>
+            <li>
+              <Link to="/using-scss">SASS</Link>
+            </li>
           </ul>
         </nav>
         <div className="content">
@@ -46,6 +50,7 @@ const App = () => {
               element={<StyledComponents />}
             ></Route>
             <Route path="/emotion" element={<Emotion />}></Route>
+            <Route path="/using-scss" element={<Sass />}></Route>
           </Routes>
         </div>
       </div>
